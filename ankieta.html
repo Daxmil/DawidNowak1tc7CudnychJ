@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jedzenie</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+
+        <div id="tytul">
+            <ul id="lista">
+                <li class="lista2"><span id="menu" onclick="openNav()">&#9776;
+                        Menu</span></a></li>
+                <li class="lista2"><a href="ankieta.html">Oceń</a></li>
+                <li class="lista2"><a href="wiecej.html">Więcej</a></li>
+                <li class="lista2"><a href="meniu_typu_nie_ruszajacego_sie.html">Główna</a></li>
+            </ul>
+            <div id="text">Cudne Jedzenie</div>
+            <div id="nawigacja" class="nawigacja">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Pod/Herbata.html">Herbata</a>
+                <a href="Pod/Lody.html">Lody</a>
+                <a href="Pod/Gofry.html">Gofry</a>
+                <a href="Pod/Nalesniki.html">Naleśniki</a>
+                <a href="Pod/Pączki.html">Pączki</a>
+                <a href="Pod/Smoczy.html">Smocze owoce</a>
+                <a href="Pod/Pomidory.html">Pomidory</a>
+            </div>
+        </div>
+        <div id="form">
+            <form action="mailto:sans@domena.pl">
+
+                <div class="form">
+
+                    <label for="name1">Imie: </label>
+
+                    <input type="text" name="name1" id="name1" required>
+
+                </div>
+
+                <div class="form">
+
+                    <label for="name2">Nazwisko: </label>
+
+                    <input type="text" name="name2" id="name2" required>
+
+
+
+
+                </div>
+
+                <div class="form">
+
+                    <label for="email">Email: </label>
+
+                    <input type="email" name="email" id="email" required>
+
+                </div>
+
+                <div class="form">
+                </div>
+                <div class="form">
+
+                    <label for="date2">Ile dajesz gwiazdek stronie: </label>
+
+                    <select name="data2" id="data2">
+
+                        <option value="" disabled>Gwiazdki</option>
+
+                        <option value="jeden">*****</option>
+
+                        <option value="dwa">****</option>
+
+                        <option value="trzy">***</option>
+
+                        <option value="cztery">**</option>
+
+                        <option value="piec">*</option>
+
+                    </select>
+
+
+                    <div class="form">
+                        <label for="jesc">Co jest jadalne: </label><br>
+                        <input type="checkbox" id="jesc" name="jesc" value="Pączki">
+                        <label for="jesc">Pączki</label><br>
+                        <input type="checkbox" id="jesc" name="jesc" value="Wszystko_co_nie_jest_pomidorem">
+                        <label for="jesc">NIE Pomidory</label><br>
+                        <input type="checkbox" id="jesc" name="jesc" value="Naleśniki">
+                        <label for="jesc">Naleśniki</label><br>
+                        <input type="checkbox" id="jesc" name="jesc" value="Lody">
+                        <label for="jesc">Lody</label><br>
+                        <input type="checkbox" id="jesc" name="jesc" value="Smocze_owoce">
+                        <label for="jesc">Smocze owoce</label><br>
+                        <input type="checkbox" id="jesc" name="jesc" value="Gofry">
+                        <label for="jesc">Gofry</label><br><br>
+
+                    </div>
+                    <label for="jesc2">Co lepsze: </label><br>
+                    <input type="radio" id="jesc2" name="jesc2" value="Picie">
+                    <label for="jesc2">Picie</label><br>
+                    <input type="radio" id="jesc2" name="jesc2" value="Jedzenie">
+                    <label for="jesc2">Jedzenie</label><br>
+                </div><br><br>
+                <input type="submit" value="Przeslij" class="myButton2" style="margin-left: 1%">
+                <input type="reset" value="Zresetuj" class="myButton1" style="margin-left: 1%">
+            </form>
+        </div>
+
+
+        </div>
+    </main>
+    <div id="stopa">
+        <hr>
+        <footer>
+            <a href=#tytul>Na góre</a> Dawid Nowak 1Tc <a href=#tytul>Na góre</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>

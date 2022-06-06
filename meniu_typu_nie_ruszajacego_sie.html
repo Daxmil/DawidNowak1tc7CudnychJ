@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jedzenie</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .numbertext {
+            color: #111247;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <div>
+            <ul id="lista">
+                <li><span id="menu" onclick="openNav()">&#9776; Menu</span></a>
+                </li>
+                <li class="lista2"><a href="ankieta.html">Oceń</a></li>
+                <li class="lista2"><a href="wiecej.html">Więcej</a></li>
+                <li class="lista2"><a href="meniu_typu_nie_ruszajacego_sie.html">Główna</a></li>
+
+            </ul>
+            <div id="text">Cudne Jedzenie</div>
+            <div id="nawigacja" class="nawigacja">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Pod/Herbata.html">Herbata</a>
+                <a href="Pod/Lody.html">Lody</a>
+                <a href="Pod/Gofry.html">Gofry</a>
+                <a href="Pod/Nalesniki.html">Naleśniki</a>
+                <a href="Pod/Pączki.html">Pączki</a>
+                <a href="Pod/Smoczy.html">Smocze owoce</a>
+                <a href="Pod/Pomidory.html">Pomidory</a>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <img src="img/dou.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <img src="img/dragon.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="img/Gofr.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="img/ice-tea.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="img/ice.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="img/pancake.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="img/tea.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="img/tomatoes.jpg" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </main>
+    <div id="stopa">
+        <hr>
+        <footer>
+            <a href=#tytul>Na góre</a> Dawid Nowak 1Tc <a href=#tytul>Na góre</a>
+        </footer>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+
+        }
+    </script>
+</body>
+
+</html>

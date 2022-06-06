@@ -1,0 +1,394 @@
+#menu {
+  position: absolute;
+  color: white;
+  top: 24px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+body {
+  background-color: rgb(182, 233, 241);
+  margin: 0%;
+  font-family: "Inconsolata", monospace;
+}
+main {
+  min-height: calc(100vh - 4rem);
+}
+.obraz {
+  float: left;
+  border: 4px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(46, 87, 224);
+  width: 700px;
+}
+footer {
+  height: 4rem;
+}
+
+hr {
+  color: #959da5;
+}
+#stopa {
+  text-align: center;
+}
+.stopa2 {
+  position: fixed;
+  bottom: 0;
+}
+
+#lista {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.lista2 {
+  float: right;
+}
+
+.lista2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+}
+
+.lista2 a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nawigacja {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.nawigacja a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.nawigacja a:hover {
+  color: #f1f1f1;
+}
+
+.nawigacja .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 600px) {
+  .nawigacja {
+    padding-top: 15px;
+  }
+  .nawigacja a {
+    font-size: 18px;
+  }
+}
+#text {
+  font-family: "Patrick Hand", sans-serif;
+  position: absolute;
+  top: 17px;
+  left: 44%;
+  right: 10%;
+  font-size: 40px;
+  font-weight: 900;
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-style: oblique;
+  text-decoration: none;
+  letter-spacing: 6.3px;
+  text-shadow: 0px 00px 40px rgba(103, 84, 227, 1);
+  width: fit-content;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
+button {
+  cursor: pointer;
+}
+
+.form {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(6, 94, 94);
+  font-family: "Lucida Sans";
+  width: 200px;
+}
+.form:hover {
+  color: rgb(36, 124, 43);
+  font-weight: 100;
+}
+.myButton {
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 6px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 15px #2f6627;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.myButton1 {
+  background: linear-gradient(to bottom, #f60505 5%, #bf2a2a 100%);
+  background-color: #d33636;
+  border-radius: 28px;
+  border: 1px solid #e70a0a;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 6px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 15px #662727;
+}
+.myButton1:hover {
+  background: linear-gradient(to bottom, #e71c0a 5%, #af1e1e 100%);
+  background-color: #f01818;
+}
+.myButton1:active {
+  position: relative;
+  top: 1px;
+}
+.myButton2 {
+  background: linear-gradient(to bottom, #0582f6 5%, #0f9dd4 100%);
+  background-color: #36b4d3;
+  border-radius: 28px;
+  border: 1px solid #0a8fe7;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 6px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 15px #275466;
+}
+.myButton2:hover {
+  background: linear-gradient(to bottom, #0a96e7 5%, #1e81af 100%);
+  background-color: #18acf0;
+}
+.myButton2:active {
+  position: relative;
+  top: 1px;
+}
+.cos {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+table {
+  border-radius: 10px;
+  border-color: #454747;
+  border-style: groove;
+  border-width: 5px;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+td {
+  border-color: #454747;
+  border-style: groove;
+  border-width: 3px;
+  border-radius: 10px;
+}
+#lista3 {
+  color: #531e1e;
+  font-size: 20px;
+}
+.zdjitext {
+  margin-top: 2%;
+  margin-left: 2%;
+  height: 600px;
+}
+.tekstdozdjec {
+  font-size: 30px;
+  width: 500px;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+  #text {
+    font-family: "Patrick Hand", sans-serif;
+    position: absolute;
+    top: 13px;
+    left: 37%;
+    right: 10%;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(130, 207, 136);
+    text-transform: capitalize;
+    font-style: oblique;
+    text-decoration: none;
+    letter-spacing: 6.3px;
+    text-shadow: 0px 00px 40px rgb(153, 227, 84);
+    width: fit-content;
+  }
+
+  #lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(43, 59, 63);
+  }
+
+  .lista2 {
+    float: right;
+  }
+
+  .lista2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  #menu {
+    position: absolute;
+    color: white;
+    top: 7px;
+    left: 15px;
+    font-size: 20px;
+  }
+  hr {
+    width: 100%;
+    border-top: #3b8317;
+    border-style: dashed;
+    border-width: 6px;
+    color: #8cda95;
+  }
+  body {
+    background-color: #8cda95;
+  }
+  .form:hover {
+    color: rgb(36, 72, 151);
+    font-weight: 100;
+  }
+  .zdjitext {
+    margin-top: 5%;
+    margin-left: 6%;
+    height: 600px;
+  }
+  .tekstdozdjec {
+    font-size: 25px;
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 105px;
+    font-weight: 700;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #text {
+    font-family: "Patrick Hand", sans-serif;
+    position: absolute;
+    top: 2px;
+    left: 23%;
+    right: 10%;
+    font-size: 12px;
+    font-weight: 9000;
+    color: rgb(221, 119, 51);
+    text-transform: capitalize;
+    font-style: oblique;
+    text-decoration: none;
+    letter-spacing: 6.3px;
+    text-shadow: 0px 00px 40px rgb(227, 170, 84);
+    width: 60px;
+  }
+
+  #lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(63, 41, 41);
+  }
+
+  .lista2 {
+    float: right;
+  }
+
+  .lista2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  #menu {
+    position: absolute;
+    color: white;
+    top: 9px;
+    left: 15px;
+    font-size: 15px;
+  }
+  hr {
+    width: 100%;
+    border-top: #693f1c;
+    border-style: dashed;
+    border-width: 6px;
+    color: #d6b069;
+  }
+  body {
+    background-color: #d6b069;
+  }
+  .form:hover {
+    color: rgb(36, 151, 74);
+    font-weight: 100;
+  }
+  .zdjitext {
+    margin-top: 5%;
+    margin-left: 6%;
+    height: 600px;
+    width: 600px;
+  }
+  .tekstdozdjec {
+    font-size: 20px;
+    width: 300px;
+    margin-left: 4%;
+    font-weight: 300;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+  }
+  .obraz {
+    margin-right: 100px;
+    width: 350px;
+    border-color: rgb(165, 101, 42);
+  }
+}
